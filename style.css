@@ -218,6 +218,41 @@ h1 {
   line-height: 1.45;
 }
 
+.contact-cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding: 2rem 0 5rem;
+}
+
+.contact-cta h2 {
+  margin: 0;
+  font-size: clamp(2rem, 4vw, 4rem);
+  letter-spacing: -0.05em;
+}
+
+.cta-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 12rem;
+  padding: 0.9rem 1.4rem;
+  border: 1px solid #18221d;
+  border-radius: 999px;
+  color: #ffffff;
+  background: #18221d;
+  font-weight: 700;
+  text-decoration: none;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.cta-link:hover {
+  color: #18221d;
+  background: #d9e4c5;
+  transform: translateY(-1px);
+}
+
 .site-footer {
   color: #ffffff;
   background: #18221d;
@@ -245,8 +280,14 @@ h1 {
   }
 
   .project-grid,
-  .studio {
+  .studio,
+  .contact-cta {
     grid-template-columns: 1fr;
+  }
+
+  .contact-cta {
+    display: grid;
+    padding-bottom: 4rem;
   }
 
   .hero {
